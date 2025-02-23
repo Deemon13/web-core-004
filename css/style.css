@@ -1,0 +1,227 @@
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url("TTLakes-Regular.eot");
+  src: local("TT Lakes Regular"), local("TTLakes-Regular"),
+    url("../fonts/TTLakes/TTLakes-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/TTLakes/TTLakes-Regular.woff") format("woff"),
+    url("../fonts/TTLakes/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url("TTLakes-Medium.eot");
+  src: local("TT Lakes Medium"), local("TTLakes-Medium"),
+    url("../fonts/TTLakes/TTLakes-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/TTLakes/TTLakes-Medium.woff") format("woff"),
+    url("../fonts/TTLakes/TTLakes-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url("TTLakes-Bold.eot");
+  src: local("TT Lakes Bold"), local("TTLakes-Bold"),
+    url("../fonts/TTLakes/TTLakes-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TTLakes/TTLakes-Bold.woff") format("woff"),
+    url("../fonts/TTLakes/TTLakes-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-family: "TT Lakes Regular", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.mobile-menu {
+  width: 320px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px 24px 32px;
+  box-shadow: -2px 0 4px 0 rgba(69, 79, 126, 0.02),
+    16px 0 52px 0 rgba(14, 24, 80, 0.2);
+}
+
+.mobile-menu__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-menu__buttons--actions {
+  justify-content: flex-start;
+}
+
+.buttons {
+  margin-bottom: 46px;
+}
+
+.buttons__left {
+  display: flex;
+  align-items: center;
+}
+
+.buttons__element,
+.actions__button {
+  display: flex;
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+  transition: transform 250ms ease-in-out;
+}
+
+.buttons__element:hover,
+.actions__button:hover {
+  cursor: pointer;
+
+  transform: scale(1.1);
+}
+
+.close {
+  margin-right: 16px;
+}
+
+.logo {
+  fill: #6b7b84;
+  stroke: #80949f;
+  stroke-width: 0.5px;
+  transition: fill 250ms ease-in-out, stroke 250ms ease-in-out;
+}
+
+.logo:hover {
+  fill: #ff3e79;
+  stroke: #ff3e79;
+}
+
+.mobile-menu__service:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__link {
+  display: flex;
+  align-items: center;
+  font-family: "TT Lakes Medium", sans-serif;
+  font-size: 16px;
+  line-height: 1.5; /* 24px */
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  transition: color 250ms ease-in-out;
+}
+
+.mobile-menu__link:hover {
+  color: #7e7e82;
+}
+
+.mobile-menu__link--active {
+  color: #7e7e82;
+}
+
+.mobile-menu__link--active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 40px;
+  margin-right: 12px;
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
+
+  background-color: #41f6d7;
+}
+
+.actions {
+  margin-bottom: 16px;
+}
+
+.actions__element:not(:last-child) {
+  margin-right: 16px;
+}
+
+.mobile-menu__mail {
+  display: block;
+  margin-bottom: 12px;
+  font-family: "TT Lakes Medium", sans-serif;
+  font-size: 16px;
+  line-height: 1.5; /* 24px */
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  transition: color 250ms ease-in-out;
+}
+
+.mobile-menu__phone {
+  display: block;
+  margin-bottom: 40px;
+  font-family: "TT Lakes Bold", sans-serif;
+  font-size: 24px;
+  line-height: 1.33; /* 32px */
+  letter-spacing: -0.6px;
+  color: #1b1c21;
+  transition: color 250ms ease-in-out;
+}
+
+.mobile-menu__mail:hover,
+.mobile-menu__phone:hover {
+  color: #7e7e82;
+}
+
+.languages {
+  display: flex;
+}
+
+.languages__item:not(:last-child) {
+  margin-right: 7px;
+}
+
+.languages__button {
+  background-color: transparent;
+  border: none;
+
+  font-family: "TT Lakes Medium", sans-serif;
+  font-size: 16px;
+  line-height: 1.5; /* 24px */
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  transition: color 250ms ease-in-out;
+}
+
+.languages__button:hover {
+  cursor: pointer;
+  color: #7e7e82;
+}
+
+.languages__button--active {
+  color: #7e7e82;
+}
